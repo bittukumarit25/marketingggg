@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fc;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #1c2b50;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #a8c4ff;
+    }
+
+    .container {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #1c2b50;
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+
+    p.subtitle {
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 15px;
+    }
+
+    /* Download Options */
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .download-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .download-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .download-card img {
+      width: 100%;
+      max-width: 160px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .download-card h3 {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #1c2b50;
+    }
+
+    .download-btn {
+      background-color: #2962ff;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .download-btn:hover {
+      background-color: #1b47c1;
+    }
+
+    .coming-soon {
+      background-color: #e0fbe0;
+      color: #2e7d32;
+      padding: 8px 16px;
+      font-size: 13px;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+
+    .note {
+      font-size: 13px;
+      margin-top: 30px;
+    }
+
+    .note a {
+      color: #2962ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .download-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .download-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ 
+
+  <!-- Intro Section -->
+  <div class="container">
+    <h1>EduKrypt works on all your devices</h1>
+    <p class="subtitle">Secure LMS on any device.</p>
+
+    <!-- Download Grid -->
+    <div id="download-section" class="download-grid">
+      <div class="download-card">
+        <img src="https://via.placeholder.com/160x100?text=MacOS" alt="MacOS">
+        <h3>MacOS</h3>
+        <a href="#" class="download-btn">Download</a>
+      </div>
+
+      <div class="download-card">
+        <img src="https://via.placeholder.com/160x100?text=Windows" alt="Windows">
+        <h3>Windows 10 and 11</h3>
+        <a href="#" class="download-btn">Download</a>
+      </div>
+
+      <div class="download-card">
+        <img src="https://via.placeholder.com/160x100?text=Chrome+Ext" alt="Chrome">
+        <h3>Google Chrome</h3>
+        <a href="#" class="download-btn">Install Extension</a>
+      </div>
+
+      <div class="download-card">
+        <img src="https://via.placeholder.com/160x100?text=iPad+App" alt="iPad">
+        <h3>iPad</h3>
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" style="height: 40px;">
+      </div>
+
+      <div class="download-card">
+        <img src="https://via.placeholder.com/160x100?text=iPhone+App" alt="iPhone">
+        <h3>iPhone</h3>
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" style="height: 40px;">
+      </div>
+
+      <div class="download-card">
+        <img src="https://via.placeholder.com/160x100?text=Android+App" alt="Android">
+        <h3>Android</h3>
+        <div class="coming-soon">Coming soon!</div>
+      </div>
+    </div>
+
+    <p class="note">Also available on the <a href="#">App Store</a></p>
+  </div>
+
+  <script>
+    function scrollToDownloads() {
+      document.getElementById("download-section").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
